@@ -1,89 +1,64 @@
-# Fake News Detection - Python ML Project
+# 📰 Fake News Detection
 
-A simple educational Fake News Detection web application built with Python, NLP, Scikit-learn and Flask.
+A Machine Learning based Fake News Detection web application built using **Python, NLP, Scikit-learn, TF-IDF, Logistic Regression, and Flask**.
 
-## Features
+The system analyzes the text of a news article and classifies it as **Real News** or **Fake News** based on patterns learned from a labeled dataset.
 
-- News article text input
-- Text preprocessing
-- TF-IDF feature extraction
-- Logistic Regression classifier
-- Fake/Real prediction
-- Confidence score
-- Flask web interface
-- Easy custom dataset training
+---
 
-## Project Structure
+## ✨ Features
 
-```text
-fake-news-detection/
-├── app.py
-├── train_model.py
-├── requirements.txt
-├── dataset/
-│   └── news.csv
-├── model/
-│   ├── model.pkl
-│   └── vectorizer.pkl
-├── templates/
-│   └── index.html
-├── static/
-│   └── css/
-│       └── style.css
-└── utils/
-    └── preprocessing.py
-```
+- 📰 News article text input
+- 🧹 Text preprocessing
+- 🔤 TF-IDF feature extraction
+- 🤖 Logistic Regression Machine Learning model
+- ✅ Real News / Fake News classification
+- 📊 Prediction confidence score
+- 🌐 Flask web application
+- 📈 Model evaluation using Accuracy, Precision, Recall and F1-Score
+- 🔄 Easy model retraining with a custom dataset
+- 📱 Responsive and user-friendly interface
 
-## Installation
+---
 
-Create and activate a virtual environment:
+## 🛠️ Technologies Used
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
+### Programming Language
+- Python
 
-Install dependencies:
+### Machine Learning & NLP
+- Scikit-learn
+- Pandas
+- TF-IDF Vectorization
+- Logistic Regression
 
-```bash
-pip install -r requirements.txt
-```
+### Web Development
+- Flask
+- HTML5
+- CSS3
 
-Train the model:
+### Tools
+- Git
+- GitHub
+- VS Code
 
-```bash
-python train_model.py
-```
+---
 
-Run the Flask application:
-
-```bash
-python app.py
-```
-
-Open:
+## 🧠 Machine Learning Workflow
 
 ```text
-http://127.0.0.1:5000
-```
-
-## Dataset
-
-The included CSV is only a small demonstration dataset. For a serious project, use a larger, properly labeled dataset and evaluate the model on held-out data.
-
-CSV format:
-
-```csv
-text,label
-"Example real news article",1
-"Example fake news article",0
-```
-
-Where:
-
-- `1` = Real
-- `0` = Fake
-
-## Important
-
-The application is an educational text classifier. It does not independently verify facts, sources, or claims. A prediction can be wrong, especially when the input differs from the training data.
+News Article
+     ↓
+Text Preprocessing
+     ↓
+Combine Title + Article
+     ↓
+TF-IDF Vectorization
+     ↓
+Train/Test Split
+     ↓
+Logistic Regression
+     ↓
+Model Evaluation
+     ↓
+REAL NEWS / FAKE NEWS
